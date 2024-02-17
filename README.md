@@ -17,3 +17,9 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+
+
+Proof:
+If we use the same constants from the little-o definition in the big-o definition,
+f(n) < c * g(n) is always equal to f(n) <= c * g(n)
+If this is true, then it also true that little-o implies big-o.
