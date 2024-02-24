@@ -26,3 +26,6 @@ If this is true, then it also true that little-o implies big-o.
 The difference of the two definitions is that little-o uses < which makes the growth much stricter when
 compared to the definition for big-o. The definition for big-o uses a <= which makes the growth for g(x)
 less restrictive. This difference between the definitions is the reason why little-o can imply big-o.
+
+The other difference between the definitions is that the little-o definition requires the inequality to hold
+for all positive constants while the big-o definition allows the inequality to hold for the specific pair.
