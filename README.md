@@ -28,4 +28,4 @@ compared to the definition for big-o. The definition for big-o uses a <= which m
 less restrictive. This difference between the definitions is the reason why little-o can imply big-o.
 
 The other difference between the definitions is that the little-o definition requires the inequality to hold
-for all positive constants while the big-o definition allows the inequality to hold for the specific pair.
+for all positive constants while the big-o definition allows the inequality to hold for all $n \geq n_{0}$ and for the constant C. This makes it much less restrictive compared to the little-o definition.
