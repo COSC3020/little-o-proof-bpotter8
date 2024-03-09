@@ -20,12 +20,13 @@ $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 
 Proof:
-If we use the same constants from the little-o definition in the big-o definition,
-f(n) < c * g(n) is always equal to f(n) <= c * g(n)
-If this is true, then it also true that little-o implies big-o.
+If we use the same constants from the little-o definition in the big-O definition,
+f(n) < c * g(n) for little-o, and
+f(n) <= c * g(n) for big-O.
+If f(n) < g(n) for all positive constants, then it must be true that f(n) is in big-O.
 The difference of the two definitions is that little-o uses < which makes the growth much stricter when
-compared to the definition for big-o. The definition for big-o uses a <= which makes the growth for g(x)
-less restrictive. This difference between the definitions is the reason why little-o can imply big-o.
+compared to the definition for big-O. The definition for big-O uses a <= which makes the growth for g(x)
+less restrictive. This difference between the definitions is the reason why little-o can imply big-O.
 
 The other difference between the definitions is that the little-o definition requires the inequality to hold
 for all positive constants while the big-o definition allows the inequality to hold for all $n \geq n_{0}$ and for the constant C. This makes it much less restrictive compared to the little-o definition.
